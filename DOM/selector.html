@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <script>
+        // selector by ID
+        document.getElementById('box1').innerHTML="Ini slector menggunakan ID";
+        // Selector By Class, karena class bisa menggunkan lebih dari satu maka memerlukan index untuk selectornya
+        var boxes = document.getElementsByClassName('boxes');
+        boxes[0].innerHTML=`<br>Ini boxes pertama`;
+        boxes[1].innerHTML='Ini Boxes kedua';
+        boxes[2].innerHTML='Ini Boxes ketiga';
+        // Selector tag
+        var list = document.getElementsByTagName('li');
+        list[0].innerHTML=`<b>yahaha wahyu</b>`;
+        list[1].innerHTML=`<i>Yahaha hayuu</i>`;
+        // selector Over powerrrrrrrr
+        document.querySelectorAll('li')[2].innerHTML='yahaha juring';
+        document.querySelectorAll('.boxes')[2].innerHTML='Query selector ni boss senggol dong';
+    </script>
+</body>
+</html>

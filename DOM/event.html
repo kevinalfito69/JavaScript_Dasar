@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="alert('sudah selesai di load')">
+    <div>
+        <h1>Login page</h1>
+        <input type="text" id="username">
+        <input type="password" name="" id="password">
+        <input type="button" value="Login" id="tombol" >
+        <br>
+        <input onclick="berubah()" type="button" id ='btnBerubah' value="Berubah">
+    </div>
+  
+<script>
+    var username = document.getElementById('username');
+    var password = document.getElementById('password');
+    var tombol = document.getElementById('tombol');
+    username.placeholder='User name';
+    password.placeholder='Password';
+    // menambah attribute
+    tombol.setAttribute('class', 'btn');
+    // ----------Bermain CSS-----------
+    // menambahkan class
+    tombol.className += ' merah';
+    // mengubah atribut css
+    username.style.border='1px solid black'
+    username.style.backgroundColor='purple'
+
+
+// -----------------Event------------
+var btnBerubah = document.getElementById('btnBerubah');
+
+function berubah(){
+    username.style.backgroundColor="rgb(36, 36, 36)";
+}
+
+password.addEventListener('click', function(){
+    password.style.backgroundColor="rgb(36, 36, 36)";})
+
+</script>
+</body>
+</html>
+  <style>
+.btn{
+    border: 1px, black;
+}
+.merah{
+    background-color: red;
+    
+}
+</style>

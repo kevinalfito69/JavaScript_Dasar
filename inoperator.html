@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inoperator</title>
+</head>
+<body>
+    <!-- 
+In operator hanya akan mengecek apakah sebuah property atau index ada atau tidak
+Jadi walaupun nilai property atau index nya undefined atau null, maka tetap akan dianggap ada
+
+     -->
+    <script>
+        const biodata={
+            namalengkap:"kevin alfito",
+            usia:19,
+            jeniskelamin:'laki-laki',
+        };
+        const hasil = "namalengkap" in biodata;
+        document.writeln(`<p>${hasil}</p>`)
+    </script>
+</body>
+</html>

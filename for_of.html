@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for_or</title>
+</head>
+<body>
+    <!-- 
+        Jika For In digunakan untuk melakukan iterasi property atau index, berbeda dengan For Of, ini digunakan untuk melakukan iterasi terhadap isi value dari iterable object, seperti Array, String dan lain-lain
+For of tidak bisa digunakan untuk melakukan iterasi data di object, karena object bukanlah iterable.
+
+     -->
+     <script>
+        //  for of pada array
+         let nama_siswa=['eko','budi','arif','ridwan','jamal','khoirudin','srimulat']
+         for(let i of nama_siswa){
+             document.writeln(`<p>Nama siswa : ${i}`)
+         }
+
+        //  for of pada string
+        let nama='Kevin Alfito'
+        for(i of nama){
+            document.writeln(`<p>Nama ${i}</p>`)
+        }
+
+     </script>
+</body>
+</html>

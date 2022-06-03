@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <!-- Destructuring adalah fitur yang bisa digunakan untuk membongkar value-value di array atau object ke dalam variable-variable
+Fitur ini sangat mempermudah kita ketika ingin mengambil data dari array atau object tanpa harus melakukan pengambilan data satu persatu
+ -->
+    <script>
+        const namaSiswa = ['eko','setiawan','yudnese','bacolidon','ayamiya yushimura simalakama'];
+        const[firstname,middlename,lastname, ...others] = namaSiswa
+        document.writeln(firstname)
+        document.writeln(middlename)
+        document.writeln(lastname)
+        document.writeln(others)
+    </script>
+</body>
+</html>

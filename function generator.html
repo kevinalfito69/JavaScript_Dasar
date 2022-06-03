@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function generator</title>
+</head>
+<body>
+    <!-- Function generator adalah function yang digunakan untuk membuat data generator
+Generator adalah data yang bisa di interasi seperti Array
+Untuk membuat function generator, kita perlu menggunakan tanda * (bintang) setelah kata function
+Dan untuk mengembalikan data di tiap iterasi, kita bisa gunakan kata kunci yield diikuti datanya
+ -->
+ <script>
+     function* createName(){
+         yield "Kevin";
+         yield "Alfito";
+     }
+     const nama = createName()
+     for(const i of nama){
+         document.writeln(i)
+     }
+ </script>
+</body>
+</html>

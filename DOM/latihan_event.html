@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <h1 class="judul">Lorem ipsum dolor sit amet.</h1>
+    <p  id="isi" class="isi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas beatae suscipit.</p>
+    <input  type="button" id='drk'value="DarkMode">
+    <br>
+    <br>
+    <p id="nama"></p>
+    <input type="text" placeholder="Masukan nama" id="input">
+    <input type="submit" value="oke" id="submit">
+    <script>
+      var drk = document.getElementById('drk');
+      var isi = document.getElementById('isi')
+      var body = document.getElementsByTagName('body')[0];
+      function darkmode() {
+         body.className = 'darkmode'
+      }
+    //   darkmode listener
+      drk.addEventListener('click',darkmode);
+    // nama saya onclick
+    var submit=document.getElementById('submit')
+    var input=document.getElementById('input')
+    var nama = document.getElementById('nama')
+    submit.onclick=function(){
+        // mengambil data dari input
+        var text = input.value;
+        nama.innerHTML=`nama saya adalah : ${text}`;
+        
+    }
+    
+    
+    </script>
+
+</body>
+</html>
+<style>
+    .darkmode{
+        color: azure;
+        background-color: black ;
+    }
+</style>

@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1">
+        <div id="paragraf">Paragraf 1</div>
+    </div>
+     <script>
+        //  ----------------Edit HTML------------
+        var el = document.createElement('h2');
+        var text = document.createTextNode('Belajar pemrograman');
+        var box = document.getElementById('box1');
+        // metode untuk menggabungkan el dan text
+        el.appendChild(text);
+        box.appendChild(el);
+
+        // menghapus 
+        // box.removeChild(el);
+
+        // mengedit
+        var el1 = document.createElement('h3');
+        var text1 = document.createTextNode('Ayo mencoba!!');
+        var paragraf = document.getElementById('paragraf');
+        // gabungkan element
+        el1.appendChild(text1);
+        
+        box.replaceChild(el1,paragraf)
+
+     </script>
+</body>
+</html>

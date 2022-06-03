@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+<body>
+    <!-- 
+For adalah salah satu kata kunci yang bisa digunakan untuk melakukan perulangan
+Blok kode yang terdapat di dalam for akan selalu diulangi selama kondisi for terpenuhi
+     -->
+     <script>
+        // sintax for   
+        // for(init statement; kondisi; post statement){
+        //     }
+/* ```Init statement akan dieksekusi hanya sekali di awal sebelum perulangan
+ Kondisi akan dilakukan pengecekan dalam setiap perulangan, jika true perulangan akan dilakukan, jika false perulangan akan berhenti
+ Post statement akan dieksekusi setiap kali diakhir perulangan
+ Init statement, Kondisi dan Post Statement tidak wajib diisi, jika Kondisi tidak diisi, berarti kondisi selalu bernilai true```*/
+
+/* perulangan tanpa henti
+     for (;;) {
+     alert("for looping");  
+ }*/
+
+// perulangan dengan kondisi
+let counter = 1;
+for(;counter <= 10;){
+    document.writeln(`<p>Perulangan ke : ${counter}</p>`)
+    counter++
+}
+// perulangan dengan init statement
+for (let index = 0; index <= 10; ) {
+    document.writeln(`<p>Perulangan init ke : ${index}</p>`)
+    index++
+    
+}
+// dengan post statement
+for (let post = 0; post <= 5; post++ ) {
+    document.writeln(`<p>Perulangan post ke : ${post}</p>`)
+
+}
+// for loop array
+const array=['ayam','kambing','kuda','kerbau','bebek']
+for (let index = 0; index < array.length; index++) {
+    document.writeln(`<li>${array[index]}</li>`);
+    
+}
+     </script>
+</body>
+</html>

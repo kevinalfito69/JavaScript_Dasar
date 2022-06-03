@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <!-- 
+Function adalah blok kode program yang akan berjalan saat kita panggil
+Sebelumnya kita sudah menggunakan function writeln() untuk menampilkan tulisan di html
+Untuk membuat function, kita bisa menggunakan kata kunci function, lalu diikuti dengan nama function, kurung () dan diakhiri dengan block kurung {}
+Kita bisa memanggil function dengan menggunakan nama function lalu diikuti dengan kurung ()
+Di bahasa pemrograman lain, function juga disebut dengan method
+
+     -->
+
+     <!-- Function Parameter -->
+     <!-- 
+Kita bisa mengirim informasi ke function yang ingin kita panggil
+Untuk melakukan hal tersebut, kita perlu menambahkan parameter atau argument di function yang sudah kita buat
+Parameter ditempatkan di dalam kurung () di deklarasi method
+Parameter bisa lebih dari satu, jika lebih dari satu, harus dipisah menggunakan tanda koma
+ -->
+ <!-- Function Return Value -->
+ <!-- Secara default, function itu tidak menghasilkan value apapun, namun jika kita ingin, kita bisa membuat sebuah function mengembalikan value
+Agar function bisa menghasilkan value, kita bisa menggunakan kata kunci return di dalam function nya.
+Dan di dalam block function, untuk menghasilkan nilai tersebut, kita harus menggunakan kata kunci return, lalu diikuti dengan data yang ingin kita hasilkan.
+Function hanya bisa mengembalikan satu data, jika kita ingin mengembalikan beberapa data sekaligus, kita bisa menggunakan Array sebagai return value nya
+
+ -->
+ <!-- Menghentikan Eksekusi dengan Return -->
+ <!-- Saat kita menggunakan kata kunci return, maka kode setelah return tersebut tidak akan dieksekusi
+Kita bisa menggunakan return untuk menghentikan eksekusi sebuah function
+     -->
+     <script>
+
+         function helloDunia(){
+             document.writeln(`<h1>Hello dunia</h1>`);
+         }
+         helloDunia();
+        //  parameter
+         function dataDiri(nama,umur){
+             document.writeln(`<p>Nama saya adalah ${nama}, usia saya ${umur}</p>`)
+
+         }
+         dataDiri('kevin', 12);
+        //  return value
+        function alamatLengkap(jalan, nomor){
+            const alamat=(`<p>Alamat jalan :${jalan}, nomor :${nomor}</p>`)
+            return alamat;
+        }
+        const hasil = alamatLengkap('Cirebon',5)
+        document.writeln(hasil);
+        // : Function Return Value Lebih Dari Satu
+        function nilaiUjian(nilai){
+            if (nilai > 90) {
+                return "A";
+            }else if (nilai > 80) {
+                return "B";
+            } else if(nilai >= 50){
+                return "C";
+            }else{
+                return "E";
+            }
+        }
+        const hasilUjian = nilaiUjian(50)
+        document.writeln(`<b>Hasil nilai uts saya adalah:${hasilUjian}</b>`)
+     </script>
+</body>
+</html>

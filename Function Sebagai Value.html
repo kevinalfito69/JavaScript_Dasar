@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function value</title>
+</head>
+<body>
+    <!--Function tidak hanya bisa digunakan sebagai kode program yang dieksekusi, tapi bisa juga sebagai value
+Artinya, function bisa disimpan di variable, bisa juga dikirim melalui parameter ke function lainnya
+-->
+ <script>
+    //  Function di Variable
+    function sayHello(name){
+        document.writeln(`Hallo ${name}`);
+    }
+    let say = sayHello();
+    sayHello("eko");
+    say("budi");
+ </script>
+</body>
+</html>
